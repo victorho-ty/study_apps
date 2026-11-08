@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>排球小測驗</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/quiz/quiz.css">
+  <script src="/assets/quiz/quiz.js" type="module"></script>
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <span class="mark" aria-hidden="true">◉</span>
+      <span>體育故事</span>
+      <span class="masthead-divider"></span>
+      <span lang="en">VOLLEYBALL</span>
+      <nav class="lessons" aria-label="排球課堂">
+        <a href="/">朱婷故事</a>
+        <a href="/rules">排球規則</a>
+        <a href="/quiz" aria-current="page">小測驗</a>
+      </nav>
+    </header>
+
+    <section class="reading quiz" aria-labelledby="quiz-title">
+      <h1 id="quiz-title">排球小測驗</h1>
+      <p>每題選一個答案。確認答案後，看看解說，再試下一題。</p>
+      <p id="loading" role="status">正在載入題目…</p>
+      <form id="quiz-form" hidden>
+        <p class="quiz-progress" id="quiz-progress"></p>
+        <h2 id="question" tabindex="-1"></h2>
+        <fieldset id="choices" aria-labelledby="question"></fieldset>
+        <p id="feedback" role="status"></p>
+        <div class="buttons">
+          <button type="submit" id="check" disabled>確認答案</button>
+          <button type="button" id="next" hidden>下一題</button>
+        </div>
+      </form>
+      <div id="results" hidden>
+        <h2 id="score" tabindex="-1"></h2>
+        <p id="result-note"></p>
+        <button type="button" id="restart">再做一次</button>
+      </div>
+      <noscript>請啟用 JavaScript 以使用小測驗。</noscript>
+    </section>
+  </main>
+</body>
+</html>

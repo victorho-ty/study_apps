@@ -19,10 +19,15 @@ async def rules(request: web.Request) -> web.FileResponse:
     return web.FileResponse(ASSETS / "rules" / "index.html")
 
 
+async def quiz(request: web.Request) -> web.FileResponse:
+    return web.FileResponse(ASSETS / "quiz" / "index.html")
+
+
 def create_app() -> web.Application:
     app = web.Application()
     app.router.add_get("/", index)
     app.router.add_get("/rules", rules)
+    app.router.add_get("/quiz", quiz)
     app.router.add_static("/assets/", ASSETS)
     return app
 
@@ -91,7 +96,7 @@ def main() -> None:
         directory = ASSETS / "rules" if args.lesson == "rules" else ASSETS
         asyncio.run(prepare_audio(directory))
     else:
-        web.run_app(create_app(), host="127.0.0.1", port=args.port)
+        web.run_app(create_app(), host="0.0.0.0", port=args.port)
 
 
 if __name__ == "__main__":
