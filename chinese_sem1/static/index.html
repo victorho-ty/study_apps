@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#206558">
+  <title>成語小書房 · 粵語伴讀</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <a class="brand" href="/" aria-label="成語小書房首頁"><span class="seal">語</span> 成語小書房</a>
+      <span class="language">粵語伴讀 <span aria-hidden="true">●</span></span>
+    </header>
+    <section class="intro">
+      <p class="eyebrow">每天讀一讀，成語記得熟</p>
+      <h1>聽一句，學一個成語。</h1>
+      <p>跟着聲音讀，留意句子裏的成語。</p>
+    </section>
+    <section class="reader" aria-label="成語朗讀練習" aria-busy="true">
+      <div class="reader-top">
+        <span id="exercise" class="eyebrow">準備練習</span>
+        <span id="counter">— / 18</span>
+      </div>
+      <progress id="progress" value="0" max="18" aria-label="題目進度"></progress>
+      <div class="sentence-area">
+        <p class="instruction">讀一讀 <span>・ 已填入正確答案</span></p>
+        <p id="sentence" class="sentence">正在載入題目……</p>
+      </div>
+      <div class="answer-row">
+        <span class="answer-label">這一題的成語</span>
+        <strong id="answer">—</strong>
+      </div>
+      <div class="playback">
+        <button id="play" class="play-button" disabled>準備聲音中……</button>
+        <label class="speed-label">語速
+          <select id="speed" aria-label="朗讀速度">
+            <option value="0.8">慢慢讀</option>
+            <option value="1" selected>正常</option>
+            <option value="1.15">快一點</option>
+          </select>
+        </label>
+      </div>
+      <p id="status" role="status" aria-live="polite">首次準備聲音需要網絡連線，請稍候。</p>
+      <div class="navigation">
+        <button id="previous" class="secondary" disabled>← 上一題</button>
+        <button id="next" class="primary" disabled>下一題 · Next →</button>
+      </div>
+    </section>
+    <footer><span>9 個成語 · 2 組練習 · 18 個例句</span><span>聽清楚，讀出來，記在心裏。</span></footer>
+  </main>
+  <audio id="audio" preload="auto"></audio>
+</body>
+</html>

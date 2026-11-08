@@ -1,0 +1,57 @@
+:root { color-scheme: light; font-family: "Microsoft JhengHei", "PingFang HK", system-ui, sans-serif; color: #253e38; background: #f5f3ec; }
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(ellipse at 90% 0%, #e7eddf 0, transparent 45%); min-height: 100vh; }
+main { max-width: 980px; padding: 30px 30px 24px; margin: auto; }
+.masthead { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.brand { text-decoration: none; color: inherit; font-weight: 700; font-size: 19px; display: flex; align-items: center; gap: 10px; }
+.seal { display: grid; place-items: center; width: 37px; height: 37px; color: #fff; background: #206558; border-radius: 10px 10px 3px 10px; font-family: serif; font-size: 25px; }
+.language { font-size: 13px; color: #526e60; letter-spacing: .06em; }
+.language span { font-size: 9px; margin-left: 7px; color: #43876b; }
+.intro { margin: 45px 0 26px; }
+.eyebrow { font-size: 12px; color: #667c70; font-weight: 700; letter-spacing: .14em; }
+h1 { font-family: "Noto Serif CJK TC", "PMingLiU", serif; font-size: clamp(28px, 4vw, 39px); margin: 11px 0; font-weight: 700; letter-spacing: .06em; }
+.intro > p:last-child { color: #6c7970; font-size: 15px; }
+.reader { background: #fffefa; border: 1px solid #e1e5d9; border-radius: 22px; padding: 27px 36px 25px; box-shadow: 0 15px 50px #334b3c08; }
+.reader-top { display: flex; justify-content: space-between; align-items: center; }
+#counter { font-size: 13px; color: #697a6b; font-variant-numeric: tabular-nums; }
+progress { width: 100%; height: 4px; appearance: none; border: 0; display: block; margin-top: 17px; border-radius: 4px; background: #edf0e7; }
+progress::-webkit-progress-bar { background: #edf0e7; border-radius: 4px; }
+progress::-webkit-progress-value { background: #78a187; border-radius: 4px; }
+progress::-moz-progress-bar { background: #78a187; border-radius: 4px; }
+.sentence-area { padding: 27px 0 22px; }
+.instruction { font-size: 13px; color: #6a7b6e; margin: 0 0 17px; }
+.instruction span { color: #8a9488; font-size: 12px; margin-left: 7px; }
+.sentence { font-size: clamp(25px, 3.65vw, 34px); line-height: 2; letter-spacing: .07em; margin: 0; min-height: 3.9em; line-break: strict; overflow-wrap: anywhere; }
+.char { border-radius: 4px; padding: 4px 0; }
+.char.answer { color: #9c502c; background: #fbefdf; border-bottom: 2px solid #d7ac78; }
+.char.active { color: #fff; background: #206558; box-shadow: 0 2px 0 #164c42; border-color: #206558; }
+.answer-row { display: flex; gap: 18px; align-items: center; padding: 14px 18px; border-radius: 12px; background: #f1f4e9; }
+.answer-label { font-size: 12px; color: #677a61; }
+#answer { font-size: 22px; font-weight: 600; letter-spacing: .15em; }
+.playback { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 23px; }
+button, select { font: inherit; }
+button { cursor: pointer; border: 0; border-radius: 10px; padding: 12px 19px; font-size: 14px; font-weight: 600; min-height: 44px; }
+button:disabled { cursor: default; opacity: .48; }
+button:focus-visible, select:focus-visible, a:focus-visible { outline: 3px solid #ba822c; outline-offset: 4px; }
+.play-button { color: #206558; background: #e9f0e9; min-width: 155px; }
+.play-button:hover:enabled, .secondary:hover:enabled { background: #dce9dd; }
+.speed-label { display: flex; align-items: center; gap: 10px; color: #73806f; font-size: 12px; }
+select { color: #3a5c48; border: 1px solid #dee3d7; background: #fffefa; border-radius: 8px; padding: 8px 10px; }
+#status { margin: 12px 0 21px; color: #727e6c; font-size: 12px; line-height: 1.6; min-height: 20px; }
+#status.error { color: #aa3f2b; }
+.navigation { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #e9ebdf; padding-top: 20px; gap: 14px; }
+.primary { background: #206558; color: white; padding-inline: 25px; }
+.primary:hover:enabled { background: #164f43; }
+.secondary { background: #f0f2ea; color: #657a65; }
+footer { display: flex; justify-content: space-between; gap: 12px; margin: 22px 3px 0; font-size: 11px; color: #7e8977; }
+@media (max-width: 600px) {
+  main { padding: 20px 16px; }
+  .intro { margin-top: 31px; }
+  .reader { padding: 22px 20px; border-radius: 17px; }
+  .sentence { line-height: 2; }
+  .playback { gap: 8px; }
+  .play-button { min-width: 135px; padding-inline: 12px; }
+  .speed-label { gap: 6px; }
+  .answer-row { gap: 12px; padding-inline: 12px; }
+  footer { flex-direction: column; text-align: center; }
+}
