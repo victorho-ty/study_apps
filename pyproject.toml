@@ -1,0 +1,14 @@
+[project]
+name = "study-apps"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "aiohttp==3.13.5",
+    "edge-tts>=7.3.1,<8",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]
