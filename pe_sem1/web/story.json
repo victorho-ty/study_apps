@@ -1,0 +1,72 @@
+{
+  "title": "認識中國排球運動員-朱婷",
+  "scenes": [
+    {
+      "label": "球場上的朱婷",
+      "chapter": "01",
+      "badge": "世界第一主攻",
+      "text": "朱婷是中國女子排球(Volleyball)運動員，享有「世界第一主攻」的美譽，在國際排球壇上以出色的技術和強大的心理素質聞名。",
+      "photo": "ball-toss"
+    },
+    {
+      "label": "從河南到國家隊",
+      "chapter": "02",
+      "badge": "14 歲 → 19 歲",
+      "text": "她14歲進入河南省排球隊，並在2013年正式進入中國女子排球國家隊，當時年僅19歲。",
+      "photo": "number-eight"
+    },
+    {
+      "label": "里約奧運奪金",
+      "chapter": "03",
+      "badge": "2016 · 里約",
+      "text": "她在2016里約奧運會 (Olympic Games) 首奪金牌，",
+      "photo": "rio-2016"
+    },
+    {
+      "label": "手術與復出",
+      "chapter": "04",
+      "badge": "2021 · 東京之後",
+      "text": "可是，在2021東京奧運會後，她右手手腕勞損，需進行手腕手術。復出後，她繼續參與排球比賽。",
+      "photo": "serve"
+    },
+    {
+      "label": "球場內外",
+      "chapter": "05",
+      "badge": "謙虛 · 低調 · 認真",
+      "text": "朱婷不僅在賽場上表現出色，是對手難以防守的「得分機器」，在賽場外也是一個充滿魅力和正能量的人。她謙虛、低調，對待訓練和比賽一絲不苟，深受教練和隊友的敬愛。",
+      "photo": "team-celebration",
+      "photoCues": [
+        {
+          "text": "她謙虛",
+          "photo": "team-yellow"
+        }
+      ]
+    }
+  ],
+  "photos": {
+    "ball-toss": {
+      "file": "ball-toss.png",
+      "alt": "朱婷穿着中國隊紅色二號球衣，仰望拋起的排球。"
+    },
+    "number-eight": {
+      "file": "number-eight.png",
+      "alt": "朱婷穿着紅色八號球衣，手持排球。"
+    },
+    "rio-2016": {
+      "file": "rio-2016.png",
+      "alt": "朱婷在里約奧運會的球網前跳起扣球。"
+    },
+    "serve": {
+      "file": "serve.png",
+      "alt": "朱婷穿着紅色二號球衣，托起排球準備發球。"
+    },
+    "team-yellow": {
+      "file": "team-yellow.png",
+      "alt": "朱婷與隊友穿着中國隊黃色球衣。"
+    },
+    "team-celebration": {
+      "file": "team-celebration.png",
+      "alt": "朱婷與穿紅色球衣的隊友在球網旁歡呼。"
+    }
+  }
+}

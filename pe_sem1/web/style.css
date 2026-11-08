@@ -1,0 +1,91 @@
+:root {
+  color-scheme: light;
+  font-family: "Noto Sans HK", "Microsoft JhengHei", "PingFang HK", system-ui, sans-serif;
+  color: #282134;
+  background: #f8f3eb;
+  accent-color: #7343a5;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1320px; margin: auto; padding: 24px clamp(16px, 4vw, 54px) 36px; }
+.masthead {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-weight: 750;
+  padding-bottom: 19px;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #e3d8ce;
+}
+.mark { color: #8147a4; font-size: 24px; line-height: 1; }
+.masthead-divider { width: 1px; height: 14px; background: #d6c8ce; margin-inline: 3px; }
+.masthead [lang] { color: #6b526c; font-size: .72rem; letter-spacing: .16em; }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.player, .reading {
+  background: #fffdf9;
+  border: 1px solid #e5d9d3;
+  border-radius: 20px;
+  box-shadow: 0 9px 24px #36253b0a;
+}
+.slideshow { margin: 0; overflow: hidden; border-radius: 19px 19px 0 0; }
+.photo-frame { position: relative; aspect-ratio: 640 / 420; background: #19161d; }
+.photo-frame img { position: absolute; width: 100%; height: 100%; object-fit: contain; }
+.scene-copy { padding: 12px clamp(13px, 2.3vw, 24px); border-bottom: 1px solid #e5d9d3; }
+.chapter { color: #693e7c; font-size: .72rem; letter-spacing: .15em; font-weight: 750; }
+h1 { margin: 3px 0 5px; font-size: clamp(1.15rem, 2.15vw, 1.65rem); line-height: 1.2; }
+.badge { color: #665968; font-size: .76rem; }
+.controls { padding: 16px clamp(13px, 2.3vw, 24px) 12px; }
+.timeline { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.timeline input { flex: 1; min-width: 0; }
+#time { font-size: .78rem; font-variant-numeric: tabular-nums; color: #665968; white-space: nowrap; }
+.buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+button {
+  border: 1px solid #e3d7e6;
+  border-radius: 9px;
+  padding: .55em .82em;
+  background: #f8f1fa;
+  color: #482d59;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:not(:disabled):hover { background: #ebdff1; }
+button:focus-visible, input:focus-visible { outline: 3px solid #8751af; outline-offset: 2px; }
+button:disabled { opacity: .55; cursor: default; }
+#play { background: #603389; border-color: #603389; color: white; }
+#play:not(:disabled):hover { background: #482465; }
+#status { min-height: 1.25em; margin: 9px 0 0; color: #665968; font-size: .79rem; }
+.reading { padding: clamp(16px, 2.3vw, 26px); }
+.reading-label { display: flex; justify-content: space-between; color: #693e7c; font-size: .78rem; font-weight: 750; letter-spacing: .09em; }
+h2 { font-size: clamp(1.2rem, 2.2vw, 1.65rem); margin: 12px 0 10px; }
+#passage { font-size: clamp(1.05rem, 1.65vw, 1.25rem); line-height: 2.02; overflow-wrap: anywhere; }
+#passage p { margin: 0; }
+.word { border-radius: 4px; }
+.word.active { background: #ffe18a; color: #392242; box-shadow: 0 2px #a36a1b; }
+#chapters { display: flex; flex-wrap: wrap; gap: 6px; border-top: 1px solid #e5d9d3; margin-top: 19px; padding-top: 14px; }
+#chapters button { font-size: .95rem; }
+#chapters [aria-current="step"] { background: #603389; border-color: #603389; color: white; }
+#chapters [aria-current="step"]:not(:disabled):hover { background: #482465; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 820px) {
+  .layout { grid-template-columns: minmax(0, 1fr); gap: 15px; }
+  main { max-width: 610px; }
+  .masthead { margin-bottom: 15px; }
+}
+
+
+.lessons { display: flex; flex-wrap: wrap; gap: 6px; margin-left: auto; }
+.lessons a {
+  border-radius: 8px;
+  padding: .35em .58em;
+  color: #603389;
+  text-decoration: none;
+  font-size: .86rem;
+}
+.lessons a:hover { background: #ebdff1; }
+.lessons [aria-current="page"] { background: #603389; color: white; }
+.lessons [aria-current="page"]:hover { background: #482465; }
+@media (max-width: 410px) {
+  .masthead { flex-wrap: wrap; }
+  .masthead [lang], .masthead-divider { display: none; }
+}

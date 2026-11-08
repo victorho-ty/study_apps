@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153d3a">
+  <title>Phrase Practice · English Semester 1</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <div><p class="eyebrow">PRIMARY 5 / ENGLISH / SEMESTER 1</p><h1>Little phrases. Big ideas.</h1></div>
+      <span class="badge">Your practice notebook</span>
+    </header>
+
+    <section class="pool" aria-labelledby="pool-title">
+      <div class="pool-heading"><h2 id="pool-title">Your answer pool</h2><span>12 phrases · tap Meaning for help</span></div>
+      <div id="phrase-pool" class="pool-grid"></div>
+    </section>
+
+    <section id="quiz" class="card" aria-labelledby="question-title" hidden>
+      <div class="question-meta"><span id="question-number" class="eyebrow"></span><span id="score"></span></div>
+      <progress id="progress" value="0" max="36" aria-label="Questions completed"></progress>
+      <h2 id="question-title">Find the missing phrase</h2>
+      <p class="guidance">Choose from the pool. Type the whole missing phrase, changing the tense and replacing “something” or “somebody” with the right words when needed.</p>
+      <p id="sentence" class="sentence"></p>
+      <form id="answer-form">
+        <label for="answer">Your answer</label>
+        <input id="answer" name="answer" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="300" required placeholder="Type the missing phrase…" aria-describedby="feedback">
+        <div class="actions"><button id="check" type="submit" class="primary">Check answer <span aria-hidden="true">↵</span></button><button id="reveal" type="button" class="secondary">Show answer</button><button id="next" type="button" class="primary" hidden>Next question →</button></div>
+      </form>
+      <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
+    </section>
+
+    <section id="summary" class="card" aria-labelledby="summary-title" hidden>
+      <p class="eyebrow">ROUND COMPLETE</p><h2 id="summary-title" tabindex="-1">A little practice goes a long way.</h2>
+      <p id="summary-score" class="summary-score"></p><p id="summary-detail"></p>
+      <div class="actions"><button id="review" class="primary" type="button">Practise missed questions</button><button id="restart" class="secondary" type="button">Start a fresh round</button></div>
+    </section>
+
+    <p id="loading" class="load-status" role="status">Opening your practice notebook…</p>
+    <p id="error" class="load-status error" role="alert" hidden>We could not load the questions. Check that the Python server is running, then refresh this page.</p>
+    <footer>36 original questions · 6 idioms + 6 phrasal verbs<br>Take your time. Learning matters more than your score.</footer>
+  </main>
+
+  <dialog id="meaning-dialog" aria-labelledby="meaning-title" aria-describedby="meaning-text">
+    <p id="meaning-kind" class="eyebrow"></p><h2 id="meaning-title"></h2><p id="meaning-text"></p>
+    <form method="dialog"><button class="primary">Got it</button></form>
+  </dialog>
+</body>
+</html>

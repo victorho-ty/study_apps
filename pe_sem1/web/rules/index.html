@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>排球規則 · 粵語跟讀</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/player.js" type="module"></script>
+  <link rel="stylesheet" href="/assets/rules/court.css">
+</head>
+<body data-lesson="rules">
+  <main>
+    <header class="masthead">
+      <span class="mark" aria-hidden="true">◉</span>
+      <span>體育故事</span>
+      <span class="masthead-divider"></span>
+      <span lang="en">VOLLEYBALL</span>
+      <nav class="lessons" aria-label="排球課堂">
+        <a href="/">朱婷故事</a>
+        <a href="/rules" aria-current="page">排球規則</a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <section class="player" aria-label="排球規則動畫">
+        <figure class="slideshow">
+          <svg class="court" id="court" viewBox="0 0 640 420" role="img" aria-labelledby="court-title court-desc">
+            <title id="court-title">排球場規則示範</title>
+            <desc id="court-desc">每隊十二人，每次六人上場。</desc>
+            <rect width="640" height="420" fill="#132d39"/>
+            <g class="scoreboard">
+              <rect x="139" y="20" width="362" height="76" rx="15" fill="#0d202b"/>
+              <path d="M320 31v54" stroke="#49616a"/>
+              <text x="230" y="45" class="team-a">甲隊</text>
+              <text x="410" y="45" class="team-b">乙隊</text>
+              <text x="230" y="80" id="score-a" class="score"></text>
+              <text x="410" y="80" id="score-b" class="score"></text>
+            </g>
+            <g id="court-plan">
+              <rect x="76" y="108" width="488" height="252" rx="13" fill="#22535a"/>
+              <rect x="104" y="126" width="432" height="216" fill="#b26548"/>
+              <path d="M248 126h144v216H248z" fill="#c77a55"/>
+              <path d="M104 126h432v216H104z M248 126v216 M392 126v216" fill="none" stroke="#ffe5ca" stroke-width="3"/>
+              <path d="M320 116v236" stroke="#e8f8f4" stroke-width="5" stroke-dasharray="3 5"/>
+              <g id="zones" class="diagram">
+                <path d="M248 126v216m144-216v216" fill="none" stroke="#ffe692" stroke-width="6"/>
+                <text x="175" y="240">後場</text>
+                <text x="281" y="240">前場</text>
+                <text x="359" y="240">前場</text>
+                <text x="465" y="240">後場</text>
+                <path d="M248 151h72m-72-7v14m72-14v14" stroke="#ffe692" stroke-width="2"/>
+                <text x="284" y="181" class="small">3 米</text>
+              </g>
+              <g id="dimensions" class="diagram">
+                <path d="M104 378h432m-432-7v14m432-14v14 M568 126v216m-7-216h14m-14 216h14" stroke="#ffe692" stroke-width="2"/>
+                <text x="320" y="406">18 米</text>
+                <text x="601" y="241">9 米</text>
+              </g>
+              <g id="baseline" class="diagram">
+                <path d="M104 126v216m432-216v216" stroke="#ffe692" stroke-width="7"/>
+                <text x="128" y="385">底線</text>
+                <text x="512" y="385">底線</text>
+              </g>
+              <g id="bench"></g>
+              <g id="team-a"></g>
+              <g id="team-b"></g>
+              <path id="ball-path" fill="none" stroke="#ffe692" stroke-width="2" stroke-dasharray="4 6"/>
+              <circle id="landing" r="0" fill="none" stroke="#ffe692" stroke-width="3"/>
+              <circle id="volleyball" r="10" fill="#ffe692" stroke="#132d39" stroke-width="2"/>
+            </g>
+            <g id="net-view" class="diagram">
+              <path d="M105 334h430" stroke="#dfb186" stroke-width="5"/>
+              <path id="net-mesh" fill="url(#mesh)" stroke="#e8f8f4" stroke-width="3"/>
+              <path d="M167 145v189m306-189v189" stroke="#a3c8c4" stroke-width="6"/>
+              <text id="net-label" x="320" y="262"></text>
+            </g>
+            <defs>
+              <pattern id="mesh" width="12" height="12" patternUnits="userSpaceOnUse">
+                <path d="M0 0h12v12" fill="none" stroke="#8db8b4"/>
+              </pattern>
+            </defs>
+          </svg>
+          <figcaption class="scene-copy">
+            <span class="chapter" id="chapter">01 / 04</span>
+            <h1 id="scene-title">人數</h1>
+            <span class="badge" id="badge">每隊 12 人 · 6 人上場</span>
+            <p id="demo-detail"></p>
+          </figcaption>
+        </figure>
+
+        <div class="controls">
+          <div class="timeline">
+            <label class="sr-only" for="position">播放進度</label>
+            <input type="range" id="position" min="0" max="1" value="0" step=".01" disabled>
+            <span id="time">0:00 / 0:00</span>
+          </div>
+          <div class="buttons" lang="en">
+            <button type="button" id="play" disabled>▶ Play</button>
+            <button type="button" id="pause" disabled>Ⅱ Pause</button>
+            <button type="button" id="speed" disabled>Speed · <span>1×</span></button>
+          </div>
+          <p id="status" role="status">正在載入粵語朗讀…</p>
+        </div>
+      </section>
+
+      <section class="reading rules-copy" aria-labelledby="story-title">
+        <div class="reading-label"><span>粵語朗讀</span><span>跟讀練習</span></div>
+        <h2 id="story-title"></h2>
+        <div id="passage"></div>
+        <nav id="chapters" aria-label="規則章節"></nav>
+      </section>
+    </div>
+    <audio id="narration" preload="metadata"></audio>
+    <noscript>請啟用 JavaScript 以使用排球規則動畫和朗讀。</noscript>
+  </main>
+</body>
+</html>

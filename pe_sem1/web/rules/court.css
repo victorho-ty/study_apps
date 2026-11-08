@@ -1,0 +1,14 @@
+.court { display: block; width: 100%; height: auto; background: #132d39; }
+.court text { fill: #f8f1e2; text-anchor: middle; font-size: 20px; font-weight: 750; }
+.court .score { font-size: 30px; }
+.court .small { font-size: 16px; }
+.court .team-a { fill: #ffaaa2; }
+.court .team-b { fill: #9ce5f3; }
+.court [data-off] { display: none; }
+.court .diagram { pointer-events: none; }
+#demo-detail { min-height: 1.5em; margin: 4px 0 0; font-weight: 700; }
+.rules-copy #passage { font-size: clamp(1rem, 1.45vw, 1.13rem); line-height: 1.75; }
+.rules-copy #passage section + section { margin-top: 12px; }
+.rules-copy #passage h3 { color: #603389; font-size: 1em; margin: 0 0 2px; }
+.rules-copy #passage p { padding-left: 1em; }
+

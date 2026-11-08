@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183d3a">
+  <title>Relative Clause Practice · English Semester 1</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <p class="eyebrow">PRIMARY 5 / ENGLISH / SENTENCE PRACTICE</p>
+      <h1>Bring two sentences together.</h1>
+      <p class="intro">Join each pair using a suitable relative word from the guide. Keep the meaning and make one complete sentence.</p>
+    </header>
+    <section class="clause-pool" aria-labelledby="pool-title">
+      <div class="pool-heading"><h2 id="pool-title">Relative clause guide</h2><span>Keep this guide nearby as you practise.</span></div>
+      <div id="clause-list" class="clause-grid"></div>
+    </section>
+    <section id="quiz" class="card" hidden>
+      <div class="question-meta"><span id="question-number" class="eyebrow"></span><span id="score"></span></div>
+      <progress id="progress" value="0" max="15" aria-label="Questions completed"></progress>
+      <p class="task-label">JOIN THESE SENTENCES</p>
+      <div class="sentence-pair"><p id="first-sentence"></p><p id="second-sentence"></p></div>
+      <form id="answer-form">
+        <label for="answer">Write one complete sentence</label>
+        <textarea id="answer" rows="3" maxlength="500" autocomplete="off" spellcheck="true" placeholder="Type your joined sentence here…" required></textarea>
+        <div class="actions"><button id="check" type="submit" class="primary">Check sentence</button><button id="reveal" type="button" class="secondary">Show an answer</button><button id="next" type="button" class="primary" hidden>Next question →</button></div>
+      </form>
+      <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
+    </section>
+    <section id="summary" class="card" hidden>
+      <p class="eyebrow">ROUND COMPLETE</p><h2 id="summary-title" tabindex="-1">Great work joining those ideas.</h2>
+      <p id="summary-score" class="summary-score"></p><p id="summary-detail"></p>
+      <div class="actions"><button id="review" class="primary" type="button">Practise missed questions</button><button id="restart" class="secondary" type="button">Start a fresh round</button></div>
+    </section>
+    <p id="loading" class="load-status" role="status">Opening your practice notebook…</p>
+    <p id="error" class="load-status error" role="alert" hidden>We could not load the questions. Check that the Python server is running, then refresh this page.</p>
+    <footer>15 original questions · 3 for each relative clause<br>Read both sentences carefully, then join them into one.</footer>
+  </main>
+</body>
+</html>
+
+

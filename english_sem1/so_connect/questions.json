@@ -1,0 +1,131 @@
+[
+  {
+    "id": "a-example",
+    "part": "A",
+    "number": "Example",
+    "first": "The police have enough evidence.",
+    "second": "The police can arrest the suspect.",
+    "answer": "The police have enough evidence, so they can arrest the suspect.",
+    "alternatives": [
+      "The police have enough evidence, so the police can arrest the suspect.",
+      "The police can arrest the suspect because they have enough evidence.",
+      "The police can arrest the suspect because the police have enough evidence.",
+      "Because the police have enough evidence, they can arrest the suspect.",
+      "Because the police have enough evidence, the police can arrest the suspect."
+    ]
+  },
+  {
+    "id": "a-1",
+    "part": "A",
+    "number": "1",
+    "first": "Chris does not want to go sailing.",
+    "second": "A storm is coming.",
+    "answer": "A storm is coming, so Chris does not want to go sailing.",
+    "alternatives": [
+      "Chris does not want to go sailing because a storm is coming.",
+      "Because a storm is coming, Chris does not want to go sailing."
+    ]
+  },
+  {
+    "id": "a-2",
+    "part": "A",
+    "number": "2",
+    "first": "There is a sale in the department store.",
+    "second": "It is very crowded now.",
+    "answer": "There is a sale in the department store, so it is very crowded now.",
+    "alternatives": [
+      "It is very crowded now because there is a sale in the department store.",
+      "Because there is a sale in the department store, it is very crowded now."
+    ]
+  },
+  {
+    "id": "a-3",
+    "part": "A",
+    "number": "3",
+    "first": "The restaurant does not serve apple pies.",
+    "second": "Ella ordered a banana split.",
+    "answer": "The restaurant does not serve apple pies, so Ella ordered a banana split.",
+    "alternatives": [
+      "Ella ordered a banana split because the restaurant does not serve apple pies.",
+      "Because the restaurant does not serve apple pies, Ella ordered a banana split."
+    ]
+  },
+  {
+    "id": "a-4",
+    "part": "A",
+    "number": "4",
+    "first": "Bonnie received the silver medal.",
+    "second": "Bonnie finished second in the race.",
+    "answer": "Bonnie finished second in the race, so she received the silver medal.",
+    "alternatives": [
+      "Bonnie finished second in the race, so Bonnie received the silver medal.",
+      "Bonnie received the silver medal because she finished second in the race.",
+      "Bonnie received the silver medal because Bonnie finished second in the race.",
+      "Because Bonnie finished second in the race, she received the silver medal.",
+      "Because Bonnie finished second in the race, Bonnie received the silver medal."
+    ]
+  },
+  {
+    "id": "b-example",
+    "part": "B",
+    "number": "Example",
+    "first": "Ron wants to save energy.",
+    "second": "Ron switches off the light in the daytime.",
+    "answer": "Ron wants to save energy, so he switches off the light in the daytime.",
+    "alternatives": [
+      "Ron wants to save energy, so Ron switches off the light in the daytime.",
+      "Ron switches off the light in the daytime because he wants to save energy.",
+      "Ron switches off the light in the daytime because Ron wants to save energy.",
+      "Because Ron wants to save energy, he switches off the light in the daytime.",
+      "Because Ron wants to save energy, Ron switches off the light in the daytime."
+    ]
+  },
+  {
+    "id": "b-1",
+    "part": "B",
+    "number": "1",
+    "first": "Global warming is getting worse.",
+    "second": "Icebergs are melting faster.",
+    "answer": "Global warming is getting worse, so icebergs are melting faster.",
+    "alternatives": [
+      "Icebergs are melting faster because global warming is getting worse.",
+      "Because global warming is getting worse, icebergs are melting faster."
+    ]
+  },
+  {
+    "id": "b-2",
+    "part": "B",
+    "number": "2",
+    "first": "Plenty of people became homeless.",
+    "second": "The tsunami destroyed many buildings.",
+    "answer": "Plenty of people became homeless because the tsunami destroyed many buildings.",
+    "alternatives": [
+      "The tsunami destroyed many buildings, so plenty of people became homeless.",
+      "Because the tsunami destroyed many buildings, plenty of people became homeless."
+    ]
+  },
+  {
+    "id": "b-3",
+    "part": "B",
+    "number": "3",
+    "first": "A bush fire has broken out in the woods.",
+    "second": "We should not go hiking now.",
+    "answer": "A bush fire has broken out in the woods, so we should not go hiking now.",
+    "alternatives": [
+      "We should not go hiking now because a bush fire has broken out in the woods.",
+      "Because a bush fire has broken out in the woods, we should not go hiking now."
+    ]
+  },
+  {
+    "id": "b-4",
+    "part": "B",
+    "number": "4",
+    "first": "The oysters do not taste good.",
+    "second": "Water pollution is getting worse.",
+    "answer": "The oysters do not taste good because water pollution is getting worse.",
+    "alternatives": [
+      "Water pollution is getting worse, so the oysters do not taste good.",
+      "Because water pollution is getting worse, the oysters do not taste good."
+    ]
+  }
+]

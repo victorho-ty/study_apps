@@ -1,0 +1,139 @@
+[
+  {
+    "id": "who",
+    "clause": "who",
+    "hint": "Use for a person who does something.",
+    "questions": [
+      {
+        "first": "Usain Bolt has won lots of gold medals.",
+        "second": "He is from Jamaica.",
+        "answer": "Usain Bolt, who has won lots of gold medals, is from Jamaica.",
+        "alternatives": [
+          "Usain Bolt, who is from Jamaica, has won lots of gold medals."
+        ]
+      },
+      {
+        "first": "Sue speaks four languages.",
+        "second": "She wants to become an interpreter.",
+        "answer": "Sue, who speaks four languages, wants to become an interpreter.",
+        "alternatives": [
+          "Sue, who wants to become an interpreter, speaks four languages."
+        ]
+      },
+      {
+        "first": "We thanked the coach.",
+        "second": "He taught us how to swim.",
+        "answer": "We thanked the coach who taught us how to swim.",
+        "alternatives": [
+          "We thanked the coach that taught us how to swim."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "which",
+    "clause": "which",
+    "hint": "Use for a thing or animal when adding information about it.",
+    "questions": [
+      {
+        "first": "Joey's dog is a poodle.",
+        "second": "Her poodle always jumps up at people.",
+        "answer": "Joey's dog is a poodle which always jumps up at people.",
+        "alternatives": [
+          "Joey's dog is a poodle that always jumps up at people."
+        ]
+      },
+      {
+        "first": "The story was exciting.",
+        "second": "I read it last night.",
+        "answer": "The story which I read last night was exciting.",
+        "alternatives": [
+          "The story that I read last night was exciting."
+        ]
+      },
+      {
+        "first": "We saw a dolphin.",
+        "second": "It leapt out of the water.",
+        "answer": "We saw a dolphin which leapt out of the water.",
+        "alternatives": [
+          "We saw a dolphin that leapt out of the water."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "where",
+    "clause": "where",
+    "hint": "Use for a place where something happens.",
+    "questions": [
+      {
+        "first": "We visited a farm.",
+        "second": "We fed the baby goats there.",
+        "answer": "We visited a farm where we fed the baby goats."
+      },
+      {
+        "first": "That is the library.",
+        "second": "I borrow books there.",
+        "answer": "That is the library where I borrow books."
+      },
+      {
+        "first": "We stayed in a village.",
+        "second": "My grandmother grew up there.",
+        "answer": "We stayed in a village where my grandmother grew up."
+      }
+    ]
+  },
+  {
+    "id": "whose",
+    "clause": "whose",
+    "hint": "Use for a person or animal to show that something belongs to them.",
+    "questions": [
+      {
+        "first": "I spoke to a girl.",
+        "second": "Her painting won first prize.",
+        "answer": "I spoke to a girl whose painting won first prize."
+      },
+      {
+        "first": "The farmer has a horse.",
+        "second": "Its tail is very long.",
+        "answer": "The farmer has a horse whose tail is very long."
+      },
+      {
+        "first": "We helped the man.",
+        "second": "His car had broken down.",
+        "answer": "We helped the man whose car had broken down."
+      }
+    ]
+  },
+  {
+    "id": "that",
+    "clause": "that",
+    "hint": "Use for a thing or animal in an identifying clause. It can often replace which.",
+    "questions": [
+      {
+        "first": "The cake was delicious.",
+        "second": "Mia baked it for the party.",
+        "answer": "The cake that Mia baked for the party was delicious.",
+        "alternatives": [
+          "The cake which Mia baked for the party was delicious."
+        ]
+      },
+      {
+        "first": "I like the song.",
+        "second": "It is playing on the radio.",
+        "answer": "I like the song that is playing on the radio.",
+        "alternatives": [
+          "I like the song which is playing on the radio."
+        ]
+      },
+      {
+        "first": "The puppy is very friendly.",
+        "second": "We adopted it yesterday.",
+        "answer": "The puppy that we adopted yesterday is very friendly.",
+        "alternatives": [
+          "The puppy which we adopted yesterday is very friendly."
+        ]
+      }
+    ]
+  }
+]

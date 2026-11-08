@@ -1,0 +1,55 @@
+:root { color-scheme: light; --ink: #183d3a; --muted: #526b66; --paper: #f5f4ed; --green: #246359; }
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Segoe UI", system-ui, sans-serif; line-height: 1.5; }
+main { max-width: 920px; margin: auto; padding: 34px 28px 20px; }
+.eyebrow, .task-label { font-size: .72rem; font-weight: 750; letter-spacing: .13em; margin: 0 0 8px; }
+h1 { font-family: Georgia, serif; font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 500; line-height: 1.15; margin: 0; }
+h2 { margin: 0; font-size: 1.1rem; }
+.intro { color: var(--muted); margin: 12px 0 22px; }
+.clause-pool { position: sticky; top: 10px; z-index: 2; background: #eaf0e6; border: 1px solid #ccd9cc; border-radius: 16px; padding: 16px 20px; box-shadow: 0 5px 20px #183d3a09; }
+.pool-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+.pool-heading h2 { font-size: .95rem; }
+.pool-heading span { color: var(--muted); font-size: .75rem; }
+.clause-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 9px; }
+.clause-item { padding: 9px 10px; border-radius: 10px; background: #fff9; min-width: 0; }
+.clause-item strong { display: block; font-family: Georgia, serif; font-size: 1.1rem; color: var(--green); }
+.clause-item span { display: block; color: var(--muted); font-size: .72rem; line-height: 1.35; margin-top: 3px; }
+.card { margin: 22px auto 0; padding: 28px 34px; background: #fffefa; border: 1px solid #e1e4d9; border-radius: 18px; box-shadow: 0 8px 30px #183d3a05; }
+.question-meta { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.question-meta .eyebrow { margin: 0; }
+#score { font-size: .8rem; color: var(--muted); }
+progress { width: 100%; height: 5px; border: 0; border-radius: 10px; overflow: hidden; margin: 12px 0 20px; accent-color: var(--green); }
+.task-label { color: var(--muted); margin-bottom: 3px; }
+.sentence-pair { display: grid; gap: 8px; margin-bottom: 22px; }
+.sentence-pair p { margin: 0; padding: 12px 15px; border-left: 3px solid #c58a2b; border-radius: 0 9px 9px 0; background: #f6f4eb; font-family: Georgia, serif; font-size: 1.15rem; }
+label { display: block; font-size: .82rem; font-weight: 650; margin-bottom: 7px; }
+textarea { width: 100%; resize: vertical; padding: 13px 15px; border: 1px solid #aabeb4; background: white; color: var(--ink); border-radius: 9px; font: inherit; font-size: 1rem; line-height: 1.55; }
+textarea:disabled { background: #f3f5ef; opacity: 1; color: var(--ink); }
+textarea:focus-visible, button:focus-visible { outline: 3px solid #c58a2b; outline-offset: 3px; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+button { font: inherit; cursor: pointer; border: 0; border-radius: 9px; font-weight: 650; padding: 12px 18px; min-height: 44px; }
+button:hover { filter: brightness(.94); }
+.primary { background: var(--ink); color: white; }
+.secondary { background: #edf1e9; color: var(--ink); }
+.feedback { margin-top: 15px; min-height: 1.5em; }
+.feedback.correct { color: #14543f; background: #e5f5e9; border: 2px solid #9bceaa; border-radius: 14px; padding: 18px 20px; font-size: 1.1rem; font-weight: 650; }
+.feedback.retry { color: #89591a; }
+.feedback.error, .error { color: #a33535; }
+.feedback p { margin: 7px 0 0; font-family: Georgia, serif; font-weight: 500; }
+.summary-score { font-family: Georgia, serif; font-size: 2.5rem; margin: 24px 0 8px; }
+#summary-detail { color: var(--muted); }
+footer { text-align: center; color: var(--muted); font-size: .75rem; padding: 24px 0 0; line-height: 1.8; }
+.load-status { text-align: center; padding: 25px; }
+@media (max-width: 650px) {
+  main { padding: 22px 14px; }
+  .clause-pool { top: 6px; padding: 12px; }
+  .pool-heading { display: block; }
+  .clause-grid { grid-template-columns: repeat(2, 1fr); max-height: 27vh; overflow-y: auto; }
+  .card { padding: 22px 19px; margin-top: 17px; }
+}
+
+
+.clause-grid { grid-template-columns: repeat(2, 1fr); }
+.instruction { color: #355950; font-weight: 650; margin: 0 0 16px; }
+@media (max-width: 650px) { .clause-grid { grid-template-columns: repeat(2, 1fr); } }

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>認識中國排球運動員-朱婷</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/player.js" type="module"></script>
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <span class="mark" aria-hidden="true">◉</span>
+      <span>體育故事</span>
+      <span class="masthead-divider"></span>
+      <span lang="en">VOLLEYBALL</span>
+      <nav class="lessons" aria-label="排球課堂">
+        <a href="/" aria-current="page">朱婷故事</a>
+        <a href="/rules">排球規則</a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <section class="player" aria-label="朱婷相片故事">
+        <figure class="slideshow">
+          <div class="photo-frame" id="photos"></div>
+          <figcaption class="scene-copy">
+            <span class="chapter" id="chapter">01 / 05</span>
+            <h1 id="scene-title">球場上的朱婷</h1>
+            <span class="badge" id="badge">世界第一主攻</span>
+          </figcaption>
+        </figure>
+
+        <div class="controls">
+          <div class="timeline">
+            <label class="sr-only" for="position">播放進度</label>
+            <input type="range" id="position" min="0" max="1" value="0" step=".01" disabled>
+            <span id="time">0:00 / 0:00</span>
+          </div>
+          <div class="buttons" lang="en">
+            <button type="button" id="play" disabled>▶ Play</button>
+            <button type="button" id="pause" disabled>Ⅱ Pause</button>
+            <button type="button" id="speed" disabled>Speed · <span>1×</span></button>
+          </div>
+          <p id="status" role="status">正在載入粵語朗讀…</p>
+        </div>
+      </section>
+
+      <section class="reading" aria-labelledby="story-title">
+        <div class="reading-label"><span>粵語朗讀</span><span>跟讀練習</span></div>
+        <h2 id="story-title"></h2>
+        <div id="passage"></div>
+        <nav id="chapters" aria-label="故事章節"></nav>
+      </section>
+    </div>
+    <audio id="narration" preload="metadata"></audio>
+    <noscript>請啟用 JavaScript 以使用相片播放和朗讀。</noscript>
+  </main>
+</body>
+</html>

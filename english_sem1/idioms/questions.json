@@ -1,0 +1,110 @@
+[
+  {
+    "id": "spilt-milk", "phrase": "don't cry over spilt milk", "kind": "Idiom",
+    "meaning": "Do not stay upset about something that has already happened and cannot be changed. Learn from it and move on.",
+    "questions": [
+      {"sentence": "You cannot get back the game you lost yesterday, so ____. Practise for the next one instead!", "answer": "don't cry over spilt milk"},
+      {"sentence": "\"____,\" Mum said. \"The broken vase cannot be repaired, but you can be more careful next time.\"", "answer": "don't cry over spilt milk"},
+      {"sentence": "I sent the birthday card to the wrong address. Dad said, \"____. Let's send another one today.\"", "answer": "don't cry over spilt milk"}
+    ]
+  },
+  {
+    "id": "pickle", "phrase": "in a pickle", "kind": "Idiom",
+    "meaning": "In a difficult situation or stuck with a problem.",
+    "questions": [
+      {"sentence": "I was ____ when I reached the bus stop and realised I had neither my travel card nor any money.", "answer": "in a pickle"},
+      {"sentence": "Our group was ____ because the presentation was due that morning and nobody had brought the poster.", "answer": "in a pickle"},
+      {"sentence": "Ben found himself ____ when he locked the front door with his keys still inside the empty house.", "answer": "in a pickle"}
+    ]
+  },
+  {
+    "id": "icing", "phrase": "the icing on the cake", "kind": "Idiom",
+    "meaning": "An extra good thing that makes an already good situation even better.",
+    "questions": [
+      {"sentence": "Winning the art competition was wonderful, and meeting my favourite artist afterwards was ____.", "answer": "the icing on the cake"},
+      {"sentence": "We already loved our new flat. Discovering a lovely playground next door was ____.", "answer": "the icing on the cake"},
+      {"sentence": "The class enjoyed a fantastic day at the zoo. Getting a free animal book on the way out was ____.", "answer": "the icing on the cake"}
+    ]
+  },
+  {
+    "id": "butterfingers", "phrase": "butterfingers", "kind": "Idiom",
+    "meaning": "A playful name for someone who is clumsy and often drops things. Use it kindly, not to tease someone who is upset.",
+    "questions": [
+      {"sentence": "After I dropped the ball for the third time, I laughed at myself and said, \"I'm such a ____ today!\"", "answer": "butterfingers"},
+      {"sentence": "\"What a ____ I am!\" said Dad with a smile as he dropped another sock while carrying the washing.", "answer": "butterfingers"},
+      {"sentence": "After dropping both her pencil and her rubber, Lily joked, \"Call me ____! I cannot seem to hold on to anything today.\"", "answer": "butterfingers"}
+    ]
+  },
+  {
+    "id": "cup-of-tea", "phrase": "not my cup of tea", "kind": "Idiom",
+    "meaning": "Something I do not enjoy or am not interested in. Change 'my' to 'your', 'her', 'his' or another suitable word when needed.",
+    "questions": [
+      {"sentence": "I would rather read a mystery book; watching football is ____.", "answer": "not my cup of tea"},
+      {"sentence": "\"Camping is ____,\" I explained. \"I do not enjoy sleeping in a tent.\"", "answer": "not my cup of tea"},
+      {"sentence": "I know many people love very spicy food, but it is ____ because I do not enjoy the burning taste.", "answer": "not my cup of tea"}
+    ]
+  },
+  {
+    "id": "eggshells", "phrase": "walking on egg shells", "kind": "Idiom",
+    "meaning": "Being very careful about what you say or do because you are afraid of upsetting someone. 'Eggshells' is also commonly written as one word.",
+    "questions": [
+      {"sentence": "Everyone was ____ around the grumpy coach, choosing each word carefully so that he would not get angry.", "answer": "walking on egg shells"},
+      {"sentence": "I felt as though I was ____ when I asked my upset friend about our argument, afraid that I might hurt her feelings again.", "answer": "walking on egg shells"},
+      {"sentence": "The children were ____ around their older sister, who was in a bad mood and became cross at the smallest comment.", "answer": "walking on egg shells"}
+    ]
+  },
+  {
+    "id": "keep-up", "phrase": "keep (something) up", "kind": "Phrasal verb",
+    "meaning": "Continue doing something at the same good rate or standard. Put the activity or object between 'keep' and 'up': keep the good work up.",
+    "questions": [
+      {"sentence": "You have set a good pace for the charity walk. Try to ____ until you reach the finish line.", "answer": "keep it up"},
+      {"sentence": "Our team has been playing well. We must ____ for the rest of the match.", "answer": "keep it up"},
+      {"sentence": "Ella practised the piano every day last month, and she ____ throughout this month too, continuing the same routine.", "answer": "kept it up"}
+    ]
+  },
+  {
+    "id": "keep-from", "phrase": "keep (something) from", "kind": "Phrasal verb",
+    "meaning": "Not tell someone about something; keep information secret from them. For example: keep the surprise from Tom. In this worksheet it means hiding information, rather than preventing an action.",
+    "questions": [
+      {"sentence": "We are planning a surprise party for Mum. Please ____ so that she does not find out before Saturday.", "answer": "keep it from her"},
+      {"sentence": "Sam trusted me with his secret. I promised to ____ because he did not want anyone else to know.", "answer": "keep it from everyone", "alternatives": ["keep it from everyone else"]},
+      {"sentence": "The children bought Dad a present last week and ____ until his birthday yesterday, so he had no idea what they had chosen.", "answer": "kept it from him"}
+    ]
+  },
+  {
+    "id": "look-over", "phrase": "look (something) over", "kind": "Phrasal verb",
+    "meaning": "Check or examine something, such as a piece of homework. With a pronoun, say 'look it over', not 'look over it'.",
+    "questions": [
+      {"sentence": "I have finished my spelling homework. Could you ____ and check for mistakes before I hand it in?", "answer": "look it over"},
+      {"sentence": "Before you sign this form, please ____ to check that your name and address are correct.", "answer": "look it over"},
+      {"sentence": "The teacher received my first draft yesterday and ____ to check the spelling and punctuation before returning it.", "answer": "looked it over"}
+    ]
+  },
+  {
+    "id": "let-down", "phrase": "let (somebody) down", "kind": "Phrasal verb",
+    "meaning": "Disappoint someone, especially by failing to do something they trusted you to do.",
+    "questions": [
+      {"sentence": "My teammates are counting on me to arrive on time. I do not want to ____ by missing the match.", "answer": "let them down"},
+      {"sentence": "Mum trusted me to water her plants while she was away. I forgot, and I felt sorry that I had ____.", "answer": "let her down"},
+      {"sentence": "I promised to help my little brother with his project, but I ____ when I went out to play instead.", "answer": "let him down"}
+    ]
+  },
+  {
+    "id": "look-down", "phrase": "look down on (somebody)", "kind": "Phrasal verb",
+    "meaning": "Think someone is less important or less worthy of respect than you are.",
+    "questions": [
+      {"sentence": "Some children ____ because he wears old shoes, but having less money does not make him less worthy of respect.", "answer": "look down on him"},
+      {"sentence": "Mia is new to basketball. We should encourage her and never ____ just because she is still learning.", "answer": "look down on her"},
+      {"sentence": "The wealthy man once ____ because they earned less than he did, but he later learnt to respect them.", "answer": "looked down on them"}
+    ]
+  },
+  {
+    "id": "look-into", "phrase": "look into (something)", "kind": "Phrasal verb",
+    "meaning": "Investigate a problem or situation to find out what happened or what caused it.",
+    "questions": [
+      {"sentence": "Several library books have gone missing. The librarian will ____ to find out what happened.", "answer": "look into it"},
+      {"sentence": "Nobody knows why the classroom lights keep going out. An electrician will ____ to discover the cause.", "answer": "look into it"},
+      {"sentence": "When pupils reported that the school pond was leaking last week, the caretaker ____ to find the cause of the problem.", "answer": "looked into it"}
+    ]
+  }
+]
