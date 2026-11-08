@@ -11,7 +11,7 @@ uv run python -m english_sem1.idioms.server
 
 Run the lesson tests with `uv run python -m pytest tests/english_sem1 -q`.
 
-[Chinese Semester 1 practice](chinese_sem1/README.md) includes 18 Chinese idioms.
+[Chinese Semester 1 practice](chinese_sem1/README.md) includes 18 Chinese idioms, with Chinese narration.
 
 ```powershell
 uv run python -m chinese_sem1.server
