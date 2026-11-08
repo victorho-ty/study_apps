@@ -1,4 +1,6 @@
-# study_apps
+# Study Apps
+
+Web 
 
 [English Semester 1 practice](english_sem1/README.md) contains five local
 web apps. From this repository's root, use the launch command for the lesson
