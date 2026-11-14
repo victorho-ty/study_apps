@@ -1,0 +1,39 @@
+:root {
+  font-family: "Microsoft JhengHei", "PingFang HK", "Noto Sans HK", system-ui, sans-serif;
+  color: #222c43;
+  background: #f6f3eb;
+  accent-color: #24594c;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; }
+main { max-width: 1060px; padding: 24px clamp(14px, 4vw, 42px); margin: auto; }
+header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+h1 { margin: 0; font-size: clamp(1.45rem, 4vw, 2.2rem); }
+section { background: #fffdf7; border: 1px solid #e0dace; border-radius: 18px; overflow: hidden; }
+.lesson { display: grid; grid-template-columns: 1.1fr 1fr; align-items: start; }
+canvas { width: 100%; height: auto; display: block; background: #ddf2ec; }
+.reading, #quiz { padding: clamp(16px, 3vw, 28px); }
+.eyebrow { margin: 0; color: #356458; font-weight: 700; }
+h2 { margin: 8px 0; font-size: clamp(1.35rem, 4vw, 2rem); line-height: 1.5; }
+#term { font-size: clamp(1.85rem, 6vw, 3rem); }
+#meaning { margin-top: 0; line-height: 1.6; }
+#example { font-size: 1.15rem; line-height: 1.85; padding: 10px 12px; background: #f5f1e7; border-radius: 9px; }
+.target { font-weight: 750; color: #24594c; }
+.spoken { background: #ffe28b; color: #29213b; border-radius: 3px; }
+.controls, [role="tablist"] { display: flex; flex-wrap: wrap; gap: 8px; }
+.pager { display: flex; justify-content: space-between; gap: 8px; padding: 14px; border-top: 1px solid #e0dace; }
+button, input { font: inherit; min-height: 44px; border: 1px solid #c5d5cb; border-radius: 9px; }
+button { padding: 7px 13px; font-weight: 700; background: #ebf3ed; color: #24594c; cursor: pointer; }
+button:not(:disabled):hover { filter: brightness(.94); }
+button:disabled { opacity: .5; cursor: default; }
+button:focus-visible, input:focus-visible { outline: 3px solid #8c592a; outline-offset: 2px; }
+.primary, [aria-selected="true"] { background: #24594c; color: white; }
+#audio-status, #feedback { min-height: 1.5em; line-height: 1.55; }
+#audio-status { margin-bottom: 0; }
+#quiz { max-width: 690px; }
+#quiz label { display: block; margin: 16px 0 6px; }
+input { display: block; width: min(100%, 290px); padding: 7px 10px; margin-bottom: 14px; color: inherit; background: white; }
+@media (max-width: 710px) {
+  .lesson { grid-template-columns: 1fr; }
+}
