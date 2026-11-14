@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>字詞圖畫課</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script type="module" src="/static/app.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>字詞圖畫課</h1>
+      <div role="tablist" aria-label="練習模式">
+        <button id="learn-tab" role="tab" aria-selected="true" aria-controls="learn">學習</button>
+        <button id="quiz-tab" role="tab" aria-selected="false" aria-controls="quiz" tabindex="-1">小測驗</button>
+      </div>
+    </header>
+    <p id="loading" role="status">正在載入字詞…</p>
+    <section id="learn" role="tabpanel" aria-labelledby="learn-tab" hidden>
+      <div class="lesson">
+        <canvas id="picture" width="640" height="360" role="img"></canvas>
+        <div class="reading">
+          <p class="eyebrow" id="page"></p>
+          <h2 id="term" tabindex="-1"></h2>
+          <p id="meaning"></p>
+          <p id="example"></p>
+          <div class="controls">
+            <button id="play-term" class="primary">▶ 只讀字詞</button>
+            <button id="play-example" class="primary">▶ 朗讀例句</button>
+            <button id="pause" disabled>暫停</button>
+            <button id="speed">速度 <span>1×</span></button>
+          </div>
+          <p id="audio-status" role="status"></p>
+        </div>
+      </div>
+      <div class="pager">
+        <button id="previous">上一頁</button>
+        <button id="forward" class="primary">下一頁</button>
+      </div>
+      <audio id="audio" preload="metadata"></audio>
+    </section>
+    <section id="quiz" role="tabpanel" aria-labelledby="quiz-tab" hidden>
+      <form id="question-form">
+        <p class="eyebrow" id="quiz-page"></p>
+        <h2 id="question" tabindex="-1"></h2>
+        <label for="answer">填入一個字詞</label>
+        <input id="answer" type="text" autocomplete="off" spellcheck="false" required>
+        <div class="controls">
+          <button id="check" class="primary" type="submit">確認答案</button>
+          <button id="next-question" type="button" hidden>下一題</button>
+        </div>
+        <p id="feedback" role="status"></p>
+        <div class="word-bank">
+          <h3>備選字詞</h3>
+          <p>點選字詞即可填入，也可選取文字複製。</p>
+          <div id="word-bank" class="controls"></div>
+        </div>
+      </form>
+      <div id="results" hidden>
+        <h2 id="score" tabindex="-1"></h2>
+        <button id="restart" class="primary">再做一次</button>
+      </div>
+    </section>
+    <noscript>請啟用 JavaScript。</noscript>
+  </main>
+</body>
+</html>
